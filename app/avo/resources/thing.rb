@@ -7,6 +7,6 @@ class Avo::Resources::Thing < Avo::BaseResource
 
   def fields
     field :id, as: :id
-    field :actions, as: :has_many
+    field :my_actions, as: :has_many, for_attribute: :actions
   end
 end
